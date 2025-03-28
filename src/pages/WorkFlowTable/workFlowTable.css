@@ -1,0 +1,161 @@
+.current-page {
+  font-weight: bold;
+}
+.workflow-builder {
+  background: #FDFBF6;
+  margin: 0 auto;
+height: 100%;
+}
+
+.workflow-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 16px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.hamburger-menu {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.header-left h1 {
+  font-size: 24px;
+  margin: 0;
+  color: #333;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-container svg {
+  position: absolute;
+  left: 10px;
+  color: #888;
+}
+
+.search-container input {
+  padding: 10px 10px 10px 40px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 250px;
+  font-size: 14px;
+}
+
+.create-process-btn {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.workflow-table-container {
+    width: 100%;
+  
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .workflow-table-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 2fr 1fr;
+    padding: 12px 16px;
+    background: #f5f5f5;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .workflow-row {
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .workflow-row-main {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 2fr 1fr;
+    padding: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .workflow-row-main:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .workflow-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .action-button, .more-button, .download-button {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .workflow-row-expanded {
+    background-color: #f5f5f5;
+    padding: 16px;
+  }
+  
+  .workflow-run {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px;
+    background-color: white;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  
+  .run-status-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+  
+  .workflow-run.passed .run-status-indicator {
+    background-color: green;
+  }
+  
+  .workflow-run.failed .run-status-indicator {
+    background-color: red;
+  }
+  
+  .workflow-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 16px;
+  }
+  
+ 
+  /* Rest of the previous CSS remains the same */
