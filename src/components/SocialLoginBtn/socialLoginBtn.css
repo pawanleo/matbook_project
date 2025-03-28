@@ -1,0 +1,29 @@
+.social-login-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--white-color-shade);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    height: 48px;
+}
+
+.social-login-button .icon {
+    position: absolute;
+    top: 0.95rem;
+    left: 2rem;
+}
+
+.social-login-button:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}

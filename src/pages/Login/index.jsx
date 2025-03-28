@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./Login.css";
-import SocialLoginButton from "../components/SocialLoginBtn/SocialLoginBtn";
-import InputField from "../components/InputField/InputField";
+import SocialLoginButton from "../../components/SocialLoginBtn/SocialLoginBtn";
+import InputField from "../../components/InputField/InputField";
+import { AppleIcon, FacebookIcon, GoogleIcon } from "../../utils/Icons";
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -30,7 +31,7 @@ const Login = () => {
       />
 
       {/* Centered Div */}
-      <div className="centered-content-wrapper">
+      <div className="centered-content-wrapper text-white">
         <div className="centered-content">
           <div className="brand_intro">
             <div>
@@ -108,17 +109,17 @@ const Login = () => {
         {/* Social Login Buttons */}
         <div className="social-logins">
           <SocialLoginButton
-            icon="/path/to/google-icon.png"
+            icon={<GoogleIcon/>}
             text="Log In with Google"
             onClick={() => console.log('Google Login')}
           />
           <SocialLoginButton
-            icon="/path/to/facebook-icon.png"
+            icon={<FacebookIcon/>}
             text="Log In with Facebook"
             onClick={() => console.log('Facebook Login')}
           />
           <SocialLoginButton 
-            icon="/path/to/apple-icon.png"
+            icon={<AppleIcon/>}
             text="Log In with Apple"
             onClick={() => console.log('Apple Login')}
           />
